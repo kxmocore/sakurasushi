@@ -58,7 +58,7 @@
     color: #fff;
     padding: 30px 20px;
     text-align: center;
-    margin-top: 448px;
+    margin-top: 278px;
   }
   
   .rodape-conteudo {
@@ -87,12 +87,6 @@
 
   }
 
-  .formulario {
-    display: flex;
-    gap: 10px;
-
-  }
-
   input {
     width: 100%;
     padding: 10px;
@@ -102,6 +96,7 @@
     background-color: azure;
     color: #333;
   }
+  
 
   h2 {
     text-align: center;
@@ -111,4 +106,5 @@
     color: #333;
     margin-top: 200px;
   }
+  
   

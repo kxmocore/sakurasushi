@@ -58,7 +58,7 @@
     color: #fff;
     padding: 30px 20px;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 126px;
   }
   
   .rodape-conteudo {
@@ -71,6 +71,32 @@
   .logo-rodape {
     width: 120px;
     height: auto;
-    filter: brightness(0) invert(1); /* deixa a logo branca, se necessário */
+    filter: brightness(0) invert(1); 
   }
-  
+
+ .sobrenos2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 150px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 90px;
+
+ }
+
+ .sobrenos2 img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+
+  }
+
+  .textosobrenos {
+    max-width: 700px;
+    font-size: 16px;
+    text-align: left;
+    margin-right: 140px;
+
+  }
