@@ -57,7 +57,7 @@ body {
 
 .logo img {
   height: 40px;
-  margin-left: 240px; 
+  margin-left: 0; 
 }
 
 .center {
@@ -100,7 +100,7 @@ body {
 
 .text-card {
   text-align: left;
-  margin-left: 278px;
+  margin-left: 175px;
   font-size: 28px;
   font-weight: bold;
   margin-top: 80px;
@@ -168,7 +168,7 @@ body {
   gap: 40px;
   flex-wrap: wrap;
   margin-top: 80px;
-  margin-left: 123px;
+  margin-left: 25px;
 }
 
 .destaque img {
@@ -194,7 +194,7 @@ body {
   padding-right: 0px;
   gap: 40px;
   flex-wrap: wrap;
-  margin-left: 135px;
+  margin-left: 25px;
 }
 
 .destaque2 img {
@@ -214,7 +214,7 @@ body {
 
 .reviews-section {
   padding: 50px 20px;
-  background: #f3f4e5 url('/img/textura-bambu.png');
+  background: #f3f4e5;
   background-repeat: repeat;
   background-size: contain;
   text-align: center;
@@ -344,5 +344,155 @@ body {
   border-radius: 4px;
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 1001;
+}
 
+.desktop-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
 
+.desktop-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.desktop-menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.menu-toggle,
+.mobile-menu {
+  display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .center,
+  .right {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2e3d9;
+    padding: 15px 0;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+
+  .center ul,
+  .right ul {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .center ul li,
+  .right ul li {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .center ul li a,
+  .right ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .center.active,
+  .right.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .logo img {
+    margin-left: 0;
+  }
+
+  .text-card {
+    margin-left: 20px;
+  }
+
+  .destaque,
+  .destaque2 {
+    padding: 20px;
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .texto-destaque,
+  .texto-destaque2 {
+    text-align: center;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .mobile-menu {
+    display: none;
+    background-color: #e2e3d9;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-menu ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .mobile-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+}

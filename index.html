@@ -11,31 +11,48 @@
 </head>
 
 <body>
+
   <header class="navbar">
     <div class="navbar-section logo">
-      <a href="index.html"><img src="img/horizontal ss.svg" alt="Logo" /> </a>
+      <a href="index.html"><img src="img/horizontal ss.svg" alt="Logo" /></a>
     </div>
-    <nav class="navbar-section center">
+
+    <nav class="desktop-menu center">
       <ul>
-        <li><a href="index.html">Home</li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="cardapio.html">Cardápio</a></li>
         <li><a href="sobrenos.html">Sobre</a></li>
         <li><a href="contato.html">Fale conosco</a></li>
       </ul>
     </nav>
-    <div class="navbar-section right">
+
+    <nav class="desktop-menu right">
       <ul>
         <li><a href="login.html">Login</a></li>
-        <li><a href="carrinho.html">
-            <div class="filtros carrinho-botao">
-              <a href="carrinho.html">
-                <i class="fas fa-shopping-cart"></i>
-              </a>
-            </div>
-          </a></li>
+        <li><a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a></li>
       </ul>
-    </div>
+    </nav>
+
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
   </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="sobrenos.html">Sobre</a></li>
+        <li><a href="contato.html">Fale conosco</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="carrinho.html"><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+
   <div class="banner">
     <img src="img/inicial.png" alt="img" style="max-width: 100%; height: auto;" class="banner-img" />
   </div>
@@ -129,7 +146,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="cardapio.html">Cardápio</a></li>
           <li><a href="sobrenos.html">Sobre</a></li>
-          <li><a href="contato.html">Fale Conoscoaa</a></li>
+          <li><a href="contato.html">Fale Conosco</a></li>
           <li><a href="carrinho.html">Carrinho</a></li>
         </ul>
       </div>
@@ -166,6 +183,14 @@
 
   </footer>
 
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 
 </html>
