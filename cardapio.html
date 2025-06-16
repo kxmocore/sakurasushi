@@ -1,39 +1,590 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shotcut icon" href="img/favicon ss.svg" type="image/x-icon">
-<title>Sakura Sushi</title>
-    <link rel="stylesheet" href="css/cardapio.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shotcut icon" href="img/favicon ss.svg" type="image/x-icon">
+  <title>Sakura Sushi</title>
+  <link rel="stylesheet" href="css/cardapio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-     <header class="navbar">
-        <div class="navbar-section logo">
-          <img href="index.html" src="img/favicon ss.svg" alt="Logo"/>
-        </div>
-        <nav class="navbar-section center">
-          <ul>
-            <li><a href="index.html">Home</li>
-            <li><a href="cardapio.html">Cardápio</a></li>
-            <li><a href="carrinho.html">Carrinho</a></li>
-            <li><a href="login.html">Login</a></li>
-          </ul>
-        </nav>
-        <div class="navbar-section right">
-          <ul>
-            <li><a href="contato.html">Fale conosco</a></li>
-            <li><a href="sobrenos.html">Sobre</a></li>
-          </ul>
-        </div>
-      </header>
+  <header class="navbar">
+    <div class="navbar-section logo">
+       <a href="index.html"><img src="img/horizontal ss.svg" alt="Logo"/> </a>
+    </div>
+    <nav class="navbar-section center">
+      <ul>
+        <li><a href="index.html">Home</li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="sobrenos.html">Sobre</a></li>
+        <li><a href="contato.html">Fale conosco</a></li>
+      </ul>
+    </nav>
+    <div class="navbar-section right">
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="carrinho.html">
+            <div>
+              <a href="carrinho.html">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </a></li>
+      </ul>
+    </div>
+  </header>
 
-      <footer class="rodape">
-        <div class="rodape-conteudo">
-          <img src="img/horizontal ss.svg" alt="lohgo" class="logo-rodape">
-          <p>© 2025 Todos os direitos reservados.</p>
+  <section class="cardapio-container">
+    <aside class="sidebar">
+      <div class="filtros">
+        <h3>Categorias</h3>
+        <ul>
+          <li><a href="#sushi">Sushi</a></li>
+          <li><a href="#temaki">Temaki</a></li>
+          <li><a href="#sashimi">Sashimi</a></li>
+          <li><a href="#hot-roll">Hot Roll</a></li>
+          <li><a href="#poke">Poke</a></li>
+          <li><a href="#yakisoba">Yakisoba</a></li>
+          <li><a href="#combos">Combos</a></li>
+          <li><a href="#bebidas">Bebidas</a></li>
+          <li><a href="#sobremesas">Sobremesas</a></li>
+        </ul>
+      </div>
+
+      <div class="filtros carrinho-botao">
+        <a href="carrinho.html">
+          <i class="fas fa-shopping-cart"></i> Carrinho
+        </a>
+      </div>
+    </aside>
+
+    <div class="produtos-area">
+
+      <div class="categoria-bloco" id="sushi">
+        <h2 class="categoria-titulo">Sushi</h2>
+        <div class="produtos-grid">
+          <div class="produto">
+            <img src="img/uramaki1.avif" alt="Combo Clássico">
+            <h4>Uramaki Salmão</h4>
+            <p class="tipo">5 peças | Tradicional</p>
+            <p class="descricao">Arroz, gergelim e salmão cru</p>
+            <span class="preco">R$ 32,90</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/niguiri1.avif" alt="Combo Especial">
+            <h4>Niguri Salmão Trufado</h4>
+            <p class="tipo">2 peças | Tradicional</p>
+            <p class="descricao">2 unidades de fatia de salmão maçaricado, com azeite de trufas e tarê, sobre arroz
+              japonês temperado.</p>
+            <span class="preco">R$ 30,90</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/djo1.avif" alt="Hot Roll">
+            <h4>Djô Peixe Branco com Tsukemono</h4>
+            <p class="tipo">2 peças | Tradicional</p>
+            <p class="descricao">Peixe branco, conserva de cebola roxa e ovas massagista.</p>
+            <span class="preco">R$ 20,90</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
         </div>
-      </footer>
+      </div>
+
+      <div class="categoria-bloco" id="temaki">
+        <h2 class="categoria-titulo">Temaki</h2>
+        <div class="produtos-grid">
+          <div class="produto">
+            <img src="img/temaki1.avif" alt="Combo Clássico">
+            <h4>Temaki Salmão</h4>
+            <p class="tipo">1 unidade | Tradicional</p>
+            <p class="descricao">Cone de arroz japonês temperado, alga e salmão</p>
+            <span class="preco">R$ 39,90</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/temaki2.avif" alt="Combo Especial">
+            <h4>Temaki Camarão</h4>
+            <p class="tipo">1 unidade | Tradicional</p>
+            <p class="descricao">Cone de arroz japonês temperado, alga e camarão</p>
+            <span class="preco">R$ 59,90</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/temaki3.avif" alt="Hot Roll">
+            <h4>Temaki Salmão Skin</h4>
+            <p class="tipo">1 unidade | Tradicional</p>
+            <p class="descricao">Cone de arroz japonês temperado, alga e tiras de pele de salmão frita.</p>
+            <span class="preco">R$ 29,90</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria-bloco" id="sashimi">
+        <h2 class="categoria-titulo">Sashimi</h2>
+        <div class="produtos-grid">
+          <div class="produto">
+            <img src="img/sashimi1.avif" alt="Temaki Salmão">
+            <h4>Sashimi Salmão</h4>
+            <p class="tipo">5 unidade | Tradicional</p>
+            <p class="descricao">5 unidades de fatias de salmão e acompanha wasabi e gengibre</p>
+            <span class="preco">R$ 42,50</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/sashimi2.avif" alt="Temaki Skin">
+            <h4>Sashimi Atum</h4>
+            <p class="tipo">5 unidade | Tradicional</p>
+            <p class="descricao">5 unidades de fatias de atum e acompanha wasabi e gengibre</p>
+            <span class="preco">R$ 42,00</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/sashimi3.avif" alt="Temaki Atum">
+            <h4>Sashimi Polvo</h4>
+            <p class="tipo">5 unidade | Tradicional</p>
+            <p class="descricao">5 unidades de fatias de polvo cozido e acompanha wasabi e gengibre</p>
+            <span class="preco">R$ 59,90</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria-bloco" id="hot-roll">
+        <h2 class="categoria-titulo">Hot Roll</h2>
+        <div class="produtos-grid">
+          <div class="produto">
+            <img src="img/hotroll1.avif" alt="Temaki Salmão">
+            <h4>Hot Roll Salmão</h4>
+            <p class="tipo">5 unidade | Tradicional</p>
+            <p class="descricao">5 unidades de enrolado de arroz japonês temperado, recheio diverso, empanado no panko e
+              frito</p>
+            <span class="preco">R$ 35,50</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/hotroll2.avif" alt="Temaki Skin">
+            <h4>Hot Roll Camarão</h4>
+            <p class="tipo">5 unidade | Tradicional</p>
+            <p class="descricao">5 unidades de enrolado de arroz japonês temperado, recheio diverso, empanado no panko e
+              frito</p>
+            <span class="preco">R$ 49,00</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/hotroll3.avif" alt="Temaki Atum">
+            <h4>Hot Roll Shimeji </h4>
+            <p class="tipo">5 unidade | Tradicional</p>
+            <p class="descricao">5 unidades de enrolado de arroz japonês temperado, recheio diverso, empanado no panko e
+              frito</p>
+            <span class="preco">R$ 29,90</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria-bloco" id="poke">
+        <h2 class="categoria-titulo">Poke</h2>
+        <div class="produtos-grid">
+          <div class="produto">
+            <img src="img/poke1.avif" alt="Temaki Salmão">
+            <h4>Poke</h4>
+            <p class="tipo">5 unidade | Tradicional</p>
+            <p class="descricao">600g de proteína, base, cream, cenoura ralada, avocado em cubos, manga em cubos, tofu,
+              sunomono, wakame, alho poró crispy, couve crispy, shimeji grelhado, cebolinha, cebola roxa, gergelim e
+              azeite de trufas</p>
+            <span class="preco">R$ 79,50</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/poke2.avif" alt="Temaki Skin">
+            <h4>Poke Spicy</h4>
+            <p class="tipo">5 unidade | Tradicional</p>
+            <p class="descricao">A picância perfeita com os sabores mais frescos e leves dos ingredientes naturais fazem
+              com que este Poke tenha várias sensações de sabores.</p>
+            <span class="preco">R$ 49,00</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/poke3.avif" alt="Temaki Atum">
+            <h4>Poke Fresh</h4>
+            <p class="tipo">5 unidade | Tradicional</p>
+            <p class="descricao">Sinta a refrescância de um Poke leve, com ingredientes frescos e com a qualidade que
+              você já conhece.</p>
+            <span class="preco">R$ 49,90</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria-bloco" id="yakisoba">
+        <h2 class="categoria-titulo">Yakisoba</h2>
+        <div class="produtos-grid">
+          <div class="produto">
+            <img src="img/yakisoba1.avif" alt="Temaki Salmão">
+            <h4>Yakisoba tradicional</h4>
+            <p class="tipo">1 unidade | Tradicional</p>
+            <p class="descricao">Macarrão oriental, molho exclusivo, vegetais selecionados e filés de carne e frango</p>
+            <span class="preco">R$ 62,50</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/yakisoba2.avif" alt="Temaki Skin">
+            <h4>Yakisoba gourmet</h4>
+            <p class="tipo">1 unidade | Gourmet</p>
+            <p class="descricao">Macarrão oriental, filés de carne e frango, mix de vegetais frescos, shimeji e molho
+              hashi express.</p>
+            <span class="preco">R$ 62,00</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/yakisoba3.avif" alt="Temaki Atum">
+            <h4>Yakisoba vegetariano</h4>
+            <p class="tipo">1 unidade | Tradicional</p>
+            <p class="descricao">Macarrão oriental, molho exclusivo, vegetais selecionados e shimeji!</p>
+            <span class="preco">R$ 62,90</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria-bloco" id="combos">
+        <h2 class="categoria-titulo">Combos</h2>
+        <div class="produtos-grid">
+          <div class="produto">
+            <img src="img/combo1.avif" alt="Temaki Salmão">
+            <h4>Vip Nada Cru</h4>
+            <p class="tipo">1 unidade | Tradicional</p>
+            <p class="descricao">10 uramaki de salmão grelhado com tarê,
+              10 hotroll de salmão grelhado com tarê
+              5 niguiri skin lemon com tarê</p>
+            <span class="preco">R$ 42,50</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/combo2.avif" alt="Temaki Skin">
+            <h4>Combo Super Vip Ice & Holl</h4>
+            <p class="tipo">Crocante | Pele de salmão</p>
+            <p class="descricao">5 niguiri de salmão
+              10 uramaki de salmão skin com tarê,
+              10 hossomaki de salmão
+              10 hotroll com tarê</p>
+            <span class="preco">R$ 52,00</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/combo3.avif" alt="Temaki Atum">
+            <h4>Combo Bruto Mesmo</h4>
+            <p class="tipo">Grande | Atum fresco</p>
+            <p class="descricao">10 uramaki de salmão com cream cheese,
+              10 hossomaki de salmão
+              10 uramaki de salmão skin com tarê.
+              5 niguiri salmão skin lemon com tarê</p>
+            <span class="preco">R$ 24,90</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria-bloco" id="bebidas">
+        <h2 class="categoria-titulo">Bebidas</h2>
+        <div class="produtos-grid">
+          <div class="produto">
+            <img src="img/bebida3.png" alt="Temaki Salmão">
+            <h4>Água garrafa</h4>
+            <p class="tipo">Bebida</p>
+            <p class="descricao">Garrafa de vidro (350ml)</p>
+            <span class="preco">R$ 7,50</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/bebida2.png" alt="Temaki Skin">
+            <h4>Red Bull lata </h4>
+            <p class="tipo">Bebida</p>
+            <p class="descricao"> Red Bull (lata azul), Rd Bull Tropical (lata amarela), Red Bull Melancia (lata
+              vermelha)</p>
+            <span class="preco">R$ 10,00</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/bebida1.png" alt="Temaki Atum">
+            <h4>Garrafa Sakê Azuma Kirin Nacional</h4>
+            <p class="tipo">Bebida</p>
+            <p class="descricao"> Sakê nacional produzido com arroz, água e fermento, de sabor suave e equilibrado.</p>
+            <span class="preco">R$ 69,00</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria-bloco" id="sobremesas">
+        <h2 class="categoria-titulo">Sobremesas</h2>
+        <div class="produtos-grid">
+          <div class="produto">
+            <img src="img/sobremesa1.avif" alt="Temaki Salmão">
+            <h4>Mini de Rolinho de Chocolate</h4>
+            <p class="tipo">4 unidade | Doce</p>
+            <p class="descricao"> Pastéis japoneses cuidadosamente fritos até atingirem a
+              perfeita crocância, envolvendo um recheio generoso de chocolate de primeira qualidade.</p>
+            <span class="preco">R$ 13,90</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/sobremesa22.png" alt="Temaki Skin">
+            <h4>Harumaki de Chocolate</h4>
+            <p class="tipo">Doce</p>
+            <p class="descricao"> Massa crocante recheada com chocolate derretido, geralmente servida quente. Pode levar
+              pedaços de chocolate ao leite ou meio amargo e ser acompanhada por sorvete ou calda de chocolate</p>
+            <span class="preco">R$ 15,00</span>
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+
+          <div class="produto">
+            <img src="img/sobremesa3.avif" alt="Temaki Atum">
+            <h4>Pudim</h4>
+            <p class="tipo">Doce</p>
+            <p class="descricao"> Sobremesa cremosa feita com leite condensado, ovos e leite, coberta com uma deliciosa
+              calda de caramelo.</p>
+            <span class="preco">R$ 8,90</span>
+
+            <button class="botao-comprar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M528.1 301.3L575.7 93.5c2.9-12.4-.4-25.6-8.8-35.5S547.7 41.5 534.9 42H120L111.6 8.4C109.4 1.4 102.7-2.5 96 0L24 32C10.7 37.9 4.2 52.8 9.3 66.1S26.7 87.6 40 81.7L88 61.1 128.4 224h319.2L478.2 320H176c-8.8 0-16 7.2-16 16s7.2 16 16 16H496c12.4 0 23.2-8.4 26.1-20.7zM208 416a48 48 0 1 0 0 96 48 48 0 1 0 0-96zm256 0a48 48 0 1 0 0 96 48 48 0 1 0 0-96z" />
+              </svg>
+              COMPRAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+   <footer class="rodape">
+
+    <div class="rodape-linhas">
+
+      <div class="coluna">
+        <h3>NAVEGAÇÃO</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="sobrenos.html">Sobre</a></li>
+          <li><a href="contato.html">Fale Conoscoaa</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+        </ul>
+      </div>
+
+      <div class="coluna">
+        <h3>MEIOS DE PAGAMENTO</h3>
+        <div class="pagamentos">
+          <img src="img/pagamentos/visa@2x.png" alt="Visa">
+          <img src="img/pagamentos/mastercard@2x.png" alt="Mastercard">
+          <img src="img/pagamentos/elo@2x.png" alt="Elo">
+          <img src="img/pagamentos/pix@2x.png" alt="Pix">
+
+        </div>
+        <h3>FORMAS DE ENVIO</h3>
+        <div class="envios">
+          <img src="img/envios/ifood-logo-0.png" alt="Ifood">
+          <img src="img/envios/Rappi_logo.svg.png" alt="Rappi">
+          <img src="img/envios/Uber-Eats-logo.png" alt="Uber Eats">
+        </div>
+      </div>
+
+      <div class="coluna">
+        <h3>CONTATO</h3>
+        <p><i class="fas fa-phone"></i> (41) 99867-9000</p>
+        <p><i class="fas fa-envelope"></i> contato@sakurasushi.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Rua Sakura, 123, Bairro Japão</p>
+      </div>
+
+    </div>
+
+    <div class="rodape-logo-final">
+      <img src="img/horizontal neg ss.svg" alt="Logo Sakura Sushi">
+    </div>
+
+  </footer>
+
 </body>
+
 </html>

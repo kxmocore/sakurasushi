@@ -1,121 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shotcut icon" href="img/favicon ss.svg" type="image/x-icon">
-<title>Sakura Sushi</title>
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shotcut icon" href="img/favicon ss.svg" type="image/x-icon">
+  <title>Sakura Sushi</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="navbar-section logo">
-          <img href="#" src="img/favicon ss.svg" alt="Logo" />
-        </div>
-        <nav class="navbar-section center">
-          <ul>
-            <li><a href="index.html">Home</li>
-            <li><a href="cardapio.html">Cardápio</a></li>
-            <li><a href="carrinho.html">Carrinho</a></li>
-            <li><a href="login.html">Login</a></li>
-          </ul>
-        </nav>
-        <div class="navbar-section right">
-          <ul>
-            <li><a href="contato.html">Fale conosco</a></li>
-            <li><a href="sobrenos.html">Sobre</a></li>
-          </ul>
-        </div>
-      </header>
-      <div class="banner">
-      <img src="img/sushi.jpg" alt="img" style="max-width: 100%; height: auto;" class="banner-img"/>
-      <img class="banner-text" src="img/horizontal neg ss.svg" alt="logo">
+  <header class="navbar">
+    <div class="navbar-section logo">
+      <a href="index.html"><img src="img/horizontal ss.svg" alt="Logo" /> </a>
+    </div>
+    <nav class="navbar-section center">
+      <ul>
+        <li><a href="index.html">Home</li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="sobrenos.html">Sobre</a></li>
+        <li><a href="contato.html">Fale conosco</a></li>
+      </ul>
+    </nav>
+    <div class="navbar-section right">
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="carrinho.html">
+            <div class="filtros carrinho-botao">
+              <a href="carrinho.html">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="banner">
+    <img src="img/inicial.png" alt="img" style="max-width: 100%; height: auto;" class="banner-img" />
+  </div>
+
+  <h2 class="text-card">Confira nossos produtos!</h2>
+
+  <section class="produtos">
+
+    <div class="produto">
+      <a href="cardapio.html#hot-roll">
+        <img src="img/product1.jpg" alt="product 1">
+        <div class="produto-label">Hot Roll</div>
+      </a>
+    </div>
+
+    <div class="produto">
+      <a href="cardapio.html#poke">
+        <img src="img/product2.jpg" alt="product 2">
+        <div class="produto-label">Poke</div>
+      </a>
+    </div>
+
+    <div class="produto">
+      <a href="cardapio.html#temaki">
+        <img src="img/product3.jpg" alt="product 3">
+        <div class="produto-label">Temaki</div>
+      </a>
+    </div>
+
+    <div class="produto">
+      <a href="cardapio.html#yakisoba">
+        <img src="img/product4.jpg" alt="product 4">
+        <div class="produto-label">Yakisoba</div>
+      </a>
+    </div>
+
+    <div class="produto">
+      <a href="cardapio.html#combos">
+        <img src="img/product5.jpg" alt="product 4">
+        <div class="produto-label">Combos</div>
+      </a>
+    </div>
+
+  </section>
+
+  <section class="destaque">
+    <img src="img/destaque1.jpg" alt="Sushi especial">
+    <div class="texto-destaque">
+      <h2>Cuidado em Cada Detalhe</h2>
+      <p>Cada sushi é preparado com atenção, respeito à tradição e técnicas apuradas. Do corte do peixe à finalização no
+        prato, garantimos qualidade e frescor em cada etapa.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="destaque2">
+      <div class="texto-destaque2">
+        <h2>Feito com Dedicação</h2>
+        <p>Aqui, sushi é mais que comida — é arte. Nossos chefs cuidam de cada ingrediente com precisão e carinho, para
+          entregar uma experiência única em cada pedaço.</p>
+      </div>
+      <img src="img/destaque2.jpg" alt="Prato 2">
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <h2>Feedback</h2>
+    <div class="reviews2">
+      <div class="review-card">
+        <p>"Simplesmente incrível! Peças fresquinhas, bem montadas e muito saborosas. Ganhou um cliente fiel!"</p>
+        <h4>- Ana Souza</h4>
+      </div>
+      <div class="review-card">
+        <p>"Esse sushi salvou minha noite! Dá pra sentir o carinho em cada detalhe. Muito obrigada!"</p>
+        <h4>- João Lima</h4>
+      </div>
+      <div class="review-card">
+        <p>"Tudo chegou certinho e antes do horário previsto. Dá pra ver que os ingredientes são de qualidade!"</p>
+        <h4>- Carla Mendes</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+
+    <div class="rodape-linhas">
+
+      <div class="coluna">
+        <h3>NAVEGAÇÃO</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="sobrenos.html">Sobre</a></li>
+          <li><a href="contato.html">Fale Conoscoaa</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+        </ul>
       </div>
 
-      <h2 class="text-card">Confira nossos produtos!</h2>
+      <div class="coluna">
+        <h3>MEIOS DE PAGAMENTO</h3>
+        <div class="pagamentos">
+          <img src="img/pagamentos/visa@2x.png" alt="Visa">
+          <img src="img/pagamentos/mastercard@2x.png" alt="Mastercard">
+          <img src="img/pagamentos/elo@2x.png" alt="Elo">
+          <img src="img/pagamentos/pix@2x.png" alt="Pix">
 
-      <section class="produtos">
-
-        <div class="produto">
-          <a href="cardapio.html#hot-roll">
-            <img src="img/product1.jpg" alt="product 1">
-            <div class="produto-label">Hot Roll</div>
-          </a>
         </div>
-
-        <div class="produto">
-          <a href="cardapio.html#poke">
-            <img src="img/product2.jpg" alt="product 2">
-          <div class="produto-label">Poke</div>
-          </a>
-        </div>
-        
-        <div class="produto">
-          <a href="cardapio.html#temaki">
-            <img src="img/product3.jpg" alt="product 3">
-          <div class="produto-label">Temaki</div>
-          </a>
-        </div>
-
-        <div class="produto">
-          <a href="cardapio.html#yakisoba">
-            <img src="img/product4.jpg" alt="product 4">
-          <div class="produto-label">Yakisoba</div>
-          </a>
-        </div>
-
-        <div class="produto">
-          <a href="cardapio.html#combinados">
-            <img src="img/product5.jpg" alt="product 4">
-            <div class="produto-label">Combinados</div>
-          </a>
-        </div>
-
-      </section>
-
-      <section class="destaque">
-        <img src="img/destaque1.jpg" alt="Sushi especial">
-        <div class="texto-destaque">
-          <h2>Sabor e Tradição</h2>
-          <p>Experimente nossos pratos preparados com ingredientes frescos e técnicas tradicionais japonesas. Perfeito para quem valoriza qualidade e autenticidade.</p>
-        </div>
-      </section>
-
-    <section>
-      <div class="destaque2">
-        <div class="texto-destaque2">
-          <h2>Fusão Criativa</h2>
-          <p>Sabores inovadores que combinam tradição com toques modernos. Descubra uma nova forma de apreciar sushi.</p>
-        </div>
-        <img src="img/destaque2.jpg" alt="Prato 2">
-      </div>
-    </section>
-
-    <section class="reviews-section">
-      <h2>Feedback</h2>
-      <div class="reviews2">
-        <div class="review-card">
-          <p>"Comida excelente e atendimento impecável. Recomendo muito!"</p>
-          <h4>- Ana Souza</h4>
-        </div>
-        <div class="review-card">
-          <p>"Melhor sushi da cidade, com certeza voltarei!"</p>
-          <h4>- João Lima</h4>
-        </div>
-        <div class="review-card">
-          <p>"Ambiente agradável e pratos deliciosos. Amei a experiência."</p>
-          <h4>- Carla Mendes</h4>
+        <h3>FORMAS DE ENVIO</h3>
+        <div class="envios">
+          <img src="img/envios/ifood-logo-0.png" alt="Ifood">
+          <img src="img/envios/Rappi_logo.svg.png" alt="Rappi">
+          <img src="img/envios/Uber-Eats-logo.png" alt="Uber Eats">
         </div>
       </div>
-    </section>
 
-    <footer class="rodape">
-      <div class="rodape-conteudo">
-        <img src="img/horizontal neg ss.svg" alt="lohgo" class="logo-rodape">
-        <p>© 2025 Todos os direitos reservados.</p>
+      <div class="coluna">
+        <h3>CONTATO</h3>
+        <p><i class="fas fa-phone"></i> (41) 99867-9000</p>
+        <p><i class="fas fa-envelope"></i> contato@sakurasushi.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Rua Sakura, 123, Bairro Japão</p>
       </div>
-    </footer>
+
+    </div>
+
+    <div class="rodape-logo-final">
+      <img src="img/horizontal neg ss.svg" alt="Logo Sakura Sushi">
+    </div>
+
+  </footer>
 
 </body>
+
 </html>

@@ -1,65 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shotcut icon" href="img/favicon ss.svg" type="image/x-icon">
-<title>Sakura Sushi</title>
-    <link rel="stylesheet" href="css/contato.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shotcut icon" href="img/favicon ss.svg" type="image/x-icon">
+  <title>Sakura Sushi</title>
+  <link rel="stylesheet" href="css/contato.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="navbar-section logo">
-          <img href="index.html" src="img/favicon ss.svg" alt="Logo"/>
-        </div>
-        <nav class="navbar-section center">
-          <ul>
-            <li><a href="index.html">Home</li>
-            <li><a href="cardapio.html">Cardápio</a></li>
-            <li><a href="carrinho.html">Carrinho</a></li>
-            <li><a href="login.html">Login</a></li>
-          </ul>
-        </nav>
-        <div class="navbar-section right">
-          <ul>
-            <li><a href="contato.html">Fale conosco</a></li>
-            <li><a href="sobrenos.html">Sobre</a></li>
-          </ul>
-        </div>
-      </header>
-
-<section class="contato">
-  <div class="container-contato">
-
-    <div class="formulario2">
-      <form>
-        <div class="formulario">
-          <input type="text" placeholder="Nome Completo">
-          <input type="email" placeholder="E-mail">
-        </div>
-        <div class="formulario">
-          <input type="number" placeholder="Número">
-          <input type="text" placeholder="Assunto">
-        </div>
-        <textarea cols="30" rows="8" placeholder="Mensagem"></textarea>
-        <button type="submit">Mandar Mensagem</button>
-      </form>
+  <header class="navbar">
+    <div class="navbar-section logo">
+      <a href="index.html"><img src="img/horizontal ss.svg" alt="Logo"/> </a>
     </div>
-     <div class="texto-contato">
-      <h2>Entre em contato</h2>
-      <p>Estamos prontos para tirar suas dúvidas e receber sugestões. Fale conosco!</p>
+    <nav class="navbar-section center">
+      <ul>
+        <li><a href="index.html">Home</li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="sobrenos.html">Sobre</a></li>
+        <li><a href="contato.html">Fale conosco</a></li>
+      </ul>
+    </nav>
+    <div class="navbar-section right">
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="carrinho.html">
+            <div class="filtros carrinho-botao">
+              <a href="carrinho.html">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </a></li>
+      </ul>
     </div>
-  </div>
+  </header>
 
-</section>
+  <section class="contato">
+    <div class="container-contato">
+
+      <div class="formulario2">
+        <form class="form-contato">
+          <div class="formulario">
+            <input type="text" placeholder="Nome Completo">
+            <input type="email" placeholder="E-mail">
+          </div>
+          <div class="formulario">
+            <input type="tel" placeholder="Número">
+            <input type="text" placeholder="Assunto">
+          </div>
+          <textarea placeholder="Mensagem"></textarea>
+          <button type="submit" class="btn-enviar">Mandar Mensagem</button>
+        </form>
+
+      </div>
+      <div class="texto-contato">
+        <h2>Entre em contato</h2>
+        <p>Precisa de ajuda, tem alguma dúvida ou sugestão? Nossa equipe está à disposição para ouvir você. Entre em
+          contato conosco e teremos o prazer em responder o mais rápido possível.</p>
+      </div>
+    </div>
+
+  </section>
 
 
-      <footer class="rodape">
-        <div class="rodape-conteudo">
-          <img src="img/horizontal ss.svg" alt="lohgo" class="logo-rodape">
-          <p>© 2025 Todos os direitos reservados.</p>
+  <footer class="rodape">
+
+    <div class="rodape-linhas">
+
+      <div class="coluna">
+        <h3>NAVEGAÇÃO</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="sobrenos.html">Sobre</a></li>
+          <li><a href="contato.html">Fale Conoscoaa</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+        </ul>
+      </div>
+
+      <div class="coluna">
+        <h3>MEIOS DE PAGAMENTO</h3>
+        <div class="pagamentos">
+          <img src="img/pagamentos/visa@2x.png" alt="Visa">
+          <img src="img/pagamentos/mastercard@2x.png" alt="Mastercard">
+          <img src="img/pagamentos/elo@2x.png" alt="Elo">
+          <img src="img/pagamentos/pix@2x.png" alt="Pix">
+
         </div>
-      </footer>
+        <h3>FORMAS DE ENVIO</h3>
+        <div class="envios">
+          <img src="img/envios/ifood-logo-0.png" alt="Ifood">
+          <img src="img/envios/Rappi_logo.svg.png" alt="Rappi">
+          <img src="img/envios/Uber-Eats-logo.png" alt="Uber Eats">
+        </div>
+      </div>
+
+      <div class="coluna">
+        <h3>CONTATO</h3>
+        <p><i class="fas fa-phone"></i> (41) 99867-9000</p>
+        <p><i class="fas fa-envelope"></i> contato@sakurasushi.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Rua Sakura, 123, Bairro Japão</p>
+      </div>
+
+    </div>
+
+    <div class="rodape-logo-final">
+      <img src="img/horizontal neg ss.svg" alt="Logo Sakura Sushi">
+    </div>
+
+  </footer>
+
 </body>
+
 </html>

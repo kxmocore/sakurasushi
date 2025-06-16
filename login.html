@@ -7,52 +7,97 @@
   <link rel="shotcut icon" href="img/favicon ss.svg" type="image/x-icon">
   <title>Sakura Sushi</title>
   <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
   <header class="navbar">
     <div class="navbar-section logo">
-      <img href="index.html" src="img/favicon ss.svg" alt="Logo" />
+       <a href="index.html"><img src="img/horizontal ss.svg" alt="Logo"/> </a>
     </div>
     <nav class="navbar-section center">
       <ul>
         <li><a href="index.html">Home</li>
         <li><a href="cardapio.html">Cardápio</a></li>
-        <li><a href="carrinho.html">Carrinho</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="sobrenos.html">Sobre</a></li>
+        <li><a href="contato.html">Fale conosco</a></li>
       </ul>
     </nav>
     <div class="navbar-section right">
-      <ul>
-        <li><a href="contato.html">Fale conosco</a></li>
-        <li><a href="sobrenos.html">Sobre</a></li>
+     <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="carrinho.html">
+            <div class="filtros carrinho-botao">
+              <a href="carrinho.html">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </a></li>
       </ul>
     </div>
   </header>
 
-  <section>
-
+  <section class="login-section">
     <h2>Faça seu login</h2>
 
     <form>
-    <div class="formulario">
+      <div class="formulario">
         <input type="email" placeholder="E-mail">
-        <input type="text" placeholder="Senha">
-    </div>
+        <input type="password" placeholder="Senha">
+      </div>
 
-    <button type="submit">Login</button>
-    <p>Não possui conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
-
+      <button type="submit" class="btn-login">Login</button>
+      <p class="texto-conta">Não possui conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
     </form>
-    
   </section>
 
   <footer class="rodape">
-    <div class="rodape-conteudo">
-      <img src="img/horizontal ss.svg" alt="lohgo" class="logo-rodape">
-      <p>© 2025 Todos os direitos reservados.</p>
+
+    <div class="rodape-linhas">
+
+      <div class="coluna">
+        <h3>NAVEGAÇÃO</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="sobrenos.html">Sobre</a></li>
+          <li><a href="contato.html">Fale Conoscoaa</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+        </ul>
+      </div>
+
+      <div class="coluna">
+        <h3>MEIOS DE PAGAMENTO</h3>
+        <div class="pagamentos">
+          <img src="img/pagamentos/visa@2x.png" alt="Visa">
+          <img src="img/pagamentos/mastercard@2x.png" alt="Mastercard">
+          <img src="img/pagamentos/elo@2x.png" alt="Elo">
+          <img src="img/pagamentos/pix@2x.png" alt="Pix">
+
+        </div>
+        <h3>FORMAS DE ENVIO</h3>
+        <div class="envios">
+          <img src="img/envios/ifood-logo-0.png" alt="Ifood">
+          <img src="img/envios/Rappi_logo.svg.png" alt="Rappi">
+          <img src="img/envios/Uber-Eats-logo.png" alt="Uber Eats">
+        </div>
+      </div>
+
+      <div class="coluna">
+        <h3>CONTATO</h3>
+        <p><i class="fas fa-phone"></i> (41) 99867-9000</p>
+        <p><i class="fas fa-envelope"></i> contato@sakurasushi.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Rua Sakura, 123, Bairro Japão</p>
+      </div>
+
     </div>
+
+    <div class="rodape-logo-final">
+      <img src="img/horizontal neg ss.svg" alt="Logo Sakura Sushi">
+    </div>
+
   </footer>
+
 </body>
 
 </html>

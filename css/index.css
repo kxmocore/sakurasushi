@@ -1,114 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+  @font-face {
+  font-family:'eras itc'; 
+  src: url('fontes/eras-demi-itc.ttf') format('truetype');
+  src: url('fontes/eras-medium-itc.ttf') format('truetype');
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Inter", sans-serif;
-    background-color: #f3f4e5
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #e2e3d9;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .navbar-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-section ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .navbar-section a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  .navbar-section a:hover {
-    color: #919191;
-  }
-  
-  .logo img {
-    height: 40px;
-  }
-  
-  .center {
-    flex: 1;
-    justify-content: center;
-  }
-  
-  .right {
-    justify-content: flex-end;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .banner {
-    position: relative;
-    text-align: center;
-  }
-  
-  .banner-img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-  }
+body {
+  font-family: "eras itc", sans-serif;
+  background-color: #f3f4e5;
+  background-image: url('/img/textura-bambu.png');
+  background-repeat: repeat;
+  background-size: contain;
+}
 
-  .text-card {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 0;
-    color: #333;
-  }
-  
-  .produtos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 16px;
-    padding: 30px;
-    justify-items: center;
-    background-color: #f3f4e5;
-    margin-top: 10px;
-  }
-  
-  .produto {
-    width: 100%;
-    max-width: 375px;
-    aspect-ratio: 3 / 4;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
-    transition: box-shadow 0.3s ease;
-    position: relative;
-  }
-  
-  .produto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #e2e3d9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.navbar-section {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-section ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-section a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar-section a:hover {
+  color: #919191;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+.logo img {
+  height: 40px;
+  margin-left: 240px; 
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center ul {
+  display: flex;
+  gap: 2.0rem;
+  list-style: none;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+}
+
+.text-card {
+  text-align: left;
+  margin-left: 278px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-bottom: 0;
+  color: #333;
+}
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px 10px;
+  background-color: #f3f4e5;
+  margin-top: 10px;
+}
+
+.produto {
+  width: 300px;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+.produto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .produto:hover img {
   transform: scale(1.03);
 }
@@ -141,6 +167,8 @@
   padding: 40px 150px;
   gap: 40px;
   flex-wrap: wrap;
+  margin-top: 80px;
+  margin-left: 123px;
 }
 
 .destaque img {
@@ -166,7 +194,7 @@
   padding-right: 0px;
   gap: 40px;
   flex-wrap: wrap;
-  
+  margin-left: 135px;
 }
 
 .destaque2 img {
@@ -184,65 +212,137 @@
   color: #333;
 }
 
-.rodape {
-  background-color: #59554e;
-  color: #fff;
-  padding: 30px 20px;
-  text-align: center;
-  margin-top: 60px;
-}
-
-.rodape-conteudo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-rodape {
-  width: 120px;
-  height: auto;
-}
-
 .reviews-section {
   padding: 50px 20px;
-  background-color: #f6f8e8;
+  background: #f3f4e5 url('/img/textura-bambu.png');
+  background-repeat: repeat;
+  background-size: contain;
   text-align: center;
 }
 
 .reviews-section h2 {
-  font-size: 2rem;
+  font-size: 32px;
+  font-weight: 600;
+  color: #222510;
+  font-family: "eras itc", sans-serif;
   margin-bottom: 50px;
   margin-top: 50px;
 }
 
 .reviews2 {
   display: flex;
-  gap: 20px;
-  padding: 0 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .review-card {
-  flex: 0 0 300px;
-  background-color: white;
-  border-radius: 15px;
-  padding: 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 507px; 
+  height: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .review-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
 .review-card p {
-  font-size: 1rem;
+  font-size: 16px;
   color: #333;
+  font-style: italic;
+  line-height: 1.5;
 }
 
 .review-card h4 {
-  margin-top: 10px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
   font-weight: bold;
-  color: #888;
 }
+
+.rodape {
+  background-color: #222510;
+  color: white;
+  padding: 5px 10px;
+}
+
+.rodape-linhas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.rodape-logo-final {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.rodape-logo-final img {
+  width: 140px;
+  height: auto;
+  opacity: 0.85;
+}
+
+.coluna {
+ flex: 0 1 250px;
+}
+
+.coluna h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.coluna ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coluna ul li {
+  margin-bottom: 8px;
+}
+
+.coluna ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.coluna ul li a:hover {
+  color: #fff;
+}
+
+.coluna p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.pagamentos img,
+.envios img {
+  height: 28px;
+  margin: 5px;
+  background: #fff;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+
+

@@ -1,41 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shotcut icon" href="img/favicon ss.svg" type="image/x-icon">
-<title>Sakura Sushi</title>
-    <link rel="stylesheet" href="css/carrinho.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shotcut icon" href="img/favicon ss.svg" type="image/x-icon">
+  <title>Sakura Sushi</title>
+  <link rel="stylesheet" href="css/carrinho.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="navbar-section logo">
-          <img href="index.html" src="img/favicon ss.svg" alt="Logo"/>
-        </div>
-        <nav class="navbar-section center">
-          <ul>
-            <li><a href="index.html">Home</li>
-            <li><a href="cardapio.html">Cardápio</a></li>
-            <li><a href="carrinho.html">Carrinho</a></li>
-            <li><a href="login.html">Login</a></li>
-          </ul>
-        </nav>
-        <div class="navbar-section right">
-          <ul>
-            <li><a href="contato.html">Fale conosco</a></li>
-            <li><a href="sobrenos.html">Sobre</a></li>
-          </ul>
-        </div>
-      </header>
-
-      <main class="container">
-    <section class="pedido">
-      <h3>Pedido do Cliente</h3>
+  <header class="navbar">
+    <div class="navbar-section logo">
+     <a href="index.html"><img src="img/horizontal ss.svg" alt="Logo"/> </a>
+    </div>
+    <nav class="navbar-section center">
       <ul>
-        <li>1x Sushi Especial</li>
-        <li>1x Temaki de Salmão</li>
-        <li>1x Guioza (6 unid.)</li>
+        <li><a href="index.html">Home</li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="sobrenos.html">Sobre</a></li>
+        <li><a href="contato.html">Fale conosco</a></li>
+      </ul>
+    </nav>
+    <div class="navbar-section right">
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="carrinho.html">
+            <div class="filtros carrinho-botao">
+              <a href="carrinho.html">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="pedido">
+      <h3>🧾 Seus Pedidos</h3>
+      <ul class="lista-pedido">
+        <li>
+          <div class="item-pedido">
+            <span class="quantidade">1x</span>
+            <span class="nome">Sushi Especial</span>
+            <span class="preco">R$ 29,90</span>
+          </div>
+        </li>
+        <li>
+          <div class="item-pedido">
+            <span class="quantidade">1x</span>
+            <span class="nome">Temaki de Salmão</span>
+            <span class="preco">R$ 34,90</span>
+          </div>
+        </li>
+        <li>
+          <div class="item-pedido">
+            <span class="quantidade">1x</span>
+            <span class="nome">Guioza (6 unid.)</span>
+            <span class="preco">R$ 25,10</span>
+          </div>
+        </li>
       </ul>
     </section>
 
@@ -43,14 +69,29 @@
       <div class="box total">
         <strong>Total:</strong> R$ 89,90
       </div>
+
       <div class="box endereco">
-        <strong>Endereço de Entrega:</strong><br>
-        Rua Sakura, 123 - Bairro Japão
+        <label for="endereco"><strong>Endereço de Entrega:</strong></label><br>
+        <input type="text" id="endereco" value="Rua Sakura, 123 - Bairro Japão">
       </div>
+
       <div class="box contato">
-        <strong>Telefone:</strong><br>
-        (11) 91234-5678
+        <label for="telefone"><strong>Telefone:</strong></label><br>
+        <input type="tel" id="telefone" value="(11) 91234-5678">
       </div>
+
+      <div class="box pagamento-opcao">
+        <label for="pagamento"><strong>Forma de Pagamento:</strong></label><br>
+        <select id="pagamento">
+          <option>Cartão</option>
+          <option>Pix</option>
+          <option>Dinheiro</option>
+        </select>
+
+      </div>
+
+      <button class="btn-finalizar">🛒 Finalizar Pedido</button>
+
     </aside>
   </main>
 
@@ -58,15 +99,53 @@
     <p>CUPOM DE DESCONTO: <strong>SAKURA10</strong></p>
   </section>
 
-  <footer class="pagamento">
-    <p>FORMA DE PAGAMENTO ACEITOS: Cartão • Pix • Dinheiro</p>
+  <footer class="rodape">
+
+    <div class="rodape-linhas">
+
+      <div class="coluna">
+        <h3>NAVEGAÇÃO</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cardapio.html">Cardápio</a></li>
+          <li><a href="sobrenos.html">Sobre</a></li>
+          <li><a href="contato.html">Fale Conoscoaa</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+        </ul>
+      </div>
+
+      <div class="coluna">
+        <h3>MEIOS DE PAGAMENTO</h3>
+        <div class="pagamentos">
+          <img src="img/pagamentos/visa@2x.png" alt="Visa">
+          <img src="img/pagamentos/mastercard@2x.png" alt="Mastercard">
+          <img src="img/pagamentos/elo@2x.png" alt="Elo">
+          <img src="img/pagamentos/pix@2x.png" alt="Pix">
+
+        </div>
+        <h3>FORMAS DE ENVIO</h3>
+        <div class="envios">
+          <img src="img/envios/ifood-logo-0.png" alt="Ifood">
+          <img src="img/envios/Rappi_logo.svg.png" alt="Rappi">
+          <img src="img/envios/Uber-Eats-logo.png" alt="Uber Eats">
+        </div>
+      </div>
+
+      <div class="coluna">
+        <h3>CONTATO</h3>
+        <p><i class="fas fa-phone"></i> (41) 99867-9000</p>
+        <p><i class="fas fa-envelope"></i> contato@sakurasushi.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Rua Sakura, 123, Bairro Japão</p>
+      </div>
+
+    </div>
+
+    <div class="rodape-logo-final">
+      <img src="img/horizontal neg ss.svg" alt="Logo Sakura Sushi">
+    </div>
+
   </footer>
 
-      <footer class="rodape">
-        <div class="rodape-conteudo">
-          <img src="img/horizontal ss.svg" alt="lohgo" class="logo-rodape">
-          <p>© 2025 Todos os direitos reservados.</p>
-        </div>
-      </footer>
 </body>
+
 </html>
